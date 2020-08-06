@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['email'])){
+    session_destroy();
+    header("location:AdminLogin.html?message=logout_successfull");
+}
+else{
+     header("location:AdminLogin.html?message=logout_successfull");
+}
+?>
